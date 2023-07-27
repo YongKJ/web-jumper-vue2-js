@@ -89,6 +89,7 @@ export class DemoTestService extends CommonService {
     @autobind
     pageNumberChange(pageNumber) {
         LogUtil.loggerLine(Log.of("DemoTestService", "pageNumberChange", "pageNumber", pageNumber));
+        LogUtil.loggerLine(Log.of("DemoTestService", "pageNumberChange", "this.service", this.service));
     }
 
     pageSizeChange(pageSize) {
