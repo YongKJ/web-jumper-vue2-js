@@ -7,7 +7,7 @@ const routes = [
   {
     path: "/",
     redirect: {
-      name: "test"
+      name: "visual"
     }
   },
   {
@@ -18,6 +18,14 @@ const routes = [
       title: "例子测试"
     }
   },
+  {
+    path: '/visual',
+    name: 'visual',
+    meta: {
+      title: 'Visualized Analysis Test'
+    },
+    component: () => import('@/views/VisualizedAnalysis.vue')
+  }
 ]
 
 const router = new VueRouter({

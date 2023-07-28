@@ -20,6 +20,7 @@ Vue.use(ElementUI);
 
 router.beforeEach((to, from, next) => {
   switch (to.path) {
+    case "/visual":
     case "/test":
       document.title = to.meta?.title;
       next();

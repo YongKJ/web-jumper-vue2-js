@@ -9,14 +9,20 @@
   "dependencies": {
     "@moefe/vue-aplayer-latest": "^2.0.0-beta.5",
     "autobind-decorator": "^2.4.0",
+    "compression-webpack-plugin": "^10.0.0",
     "core-js": "^3.8.3",
     "element-ui": "^2.15.13",
     "eventemitter2": "^6.4.9",
+    "exceljs": "^4.3.0",
     "lodash-es": "^4.17.21",
     "particles.js": "^2.0.0",
+    "plotly.js-dist-min": "^2.25.0",
+    "process": "^0.11.10",
+    "readable-web-to-node-stream": "^3.0.2",
     "vue": "2.6.14",
     "vue-happy-scroll": "^2.1.1",
-    "vue-router": "^3.5.1"
+    "vue-router": "^3.5.1",
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.0/xlsx-0.20.0.tgz"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~5.0.0",
