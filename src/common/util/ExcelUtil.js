@@ -4,8 +4,6 @@ import {FileUtil} from "@/common/util/FileUtil";
 import {Coords} from "../pojo/po/Coords";
 import {GenUtil} from "@/common/util/GenUtil";
 import * as XLSX from "xlsx";
-import {LogUtil} from "@/common/util/LogUtil";
-import {Log} from "@/common/pojo/dto/Log";
 
 export class ExcelUtil {
 
