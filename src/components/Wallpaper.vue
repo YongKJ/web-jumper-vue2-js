@@ -42,7 +42,7 @@ import {WallpaperPlusImage} from "@/common/pojo/po/WallpaperPlusImage";
 import VueParticles from "@/components/VueParticles";
 
 export default Vue.extend({
-  name: "WallpaperMini",
+  name: "Wallpaper",
   props: {
     bgImg: {
       type: String,
