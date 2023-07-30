@@ -8,19 +8,19 @@ import {Message} from "element-ui";
 export class CommonService extends EventEmitter2 {
 
     static service;
-    static mapValue = new Map();
+    static mapVue = new Map();
     static _emitter = new EventEmitter2();
 
     constructor(vue) {
         super();
         this._vue = vue;
-        if (CommonService.mapValue.size === 0) CommonService.service = this;
-        CommonService.mapValue.set(this.getServiceName() + (this.getProp("index") || 0), this.vue);
+        if (CommonService.mapVue.size === 0) CommonService.service = this;
+        CommonService.mapVue.set(this.getServiceName() + (this.getProp("index") || 0), this.vue);
     }
 
     getVue(name, index) {
         index = index || (name === this.getServiceName() ? (this.getProp("index") || 0) : 0);
-        return CommonService.mapValue.get(name + index);
+        return CommonService.mapVue.get(name + index);
     }
 
     getServiceName(className) {
